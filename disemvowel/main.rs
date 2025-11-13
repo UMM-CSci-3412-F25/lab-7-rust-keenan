@@ -26,16 +26,16 @@ fn main() {
     //  * Write the disemvoweled text using write_file
     let input_path = Path::new(&args[1]);
     let output_path = Path::new(&args[2]);
-    let original_text: &String = read_file(input_path);
+    let _original_text = read_file(input_path);
     
     // Replace String::from("dummy text") with what you get from read_file
-    let s = String::from("dummy text");
+    let s = _original_text;
 
     let s_disemvowel = disemvowel(&s);
 
     // Use command-line arguments for the name of the file,
     // and s_disemvowel for the text to write out.
-    write_file(Path::new("dummy.txt"), "output string");
+    write_file(output_path, &s_disemvowel);
 }
 
 fn read_file(path: &Path) -> String {

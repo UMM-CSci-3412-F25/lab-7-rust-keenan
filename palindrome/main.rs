@@ -1,15 +1,15 @@
 fn main() {
-    println!("{}", palindrome("Hello, world!"));
-    println!("{}", palindrome("abcdedcba"));
+    // println!("{}", palindrome("Hello, world!"));
+    // println!("{}", palindrome("abcdedcba"));
 }
 
-fn palindrome(s: &str) -> String {
+// fn palindrome(s: &str) -> String {
 
-}
+//}
 
-fn str_reverse(s: &str) -> String {
+// fn str_reverse(s: &str) -> String {
    
-}
+// }
 
 /*
 #include <stdlib.h>

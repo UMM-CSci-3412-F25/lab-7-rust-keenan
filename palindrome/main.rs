@@ -5,11 +5,11 @@ fn main() {
 
 
 fn palindrome(s: &str) -> String {
- let word = s.chars().collect::<Vec<char>>();
- if word.iter().eq(word.iter().rev()) {
-    String::from("Yes")
+ let word = s.chars().collect::<Vec<char>>(); // Convert string to vector of chars
+ if word.iter().eq(word.iter().rev()) { // check if the vector is the same for each direction
+    String::from("Yes") // if it is a palindrome
  } else {
-    String::from("No")
+    String::from("No") // if it is not a palindrome
  }
 }
 

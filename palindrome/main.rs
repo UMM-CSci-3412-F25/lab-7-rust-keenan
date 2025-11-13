@@ -1,11 +1,17 @@
 fn main() {
-    // println!("{}", palindrome("Hello, world!"));
-    // println!("{}", palindrome("abcdedcba"));
+    println!("{}", palindrome("Hello, world!"));
+    println!("{}", palindrome("abcdedcba"));
 }
 
-// fn palindrome(s: &str) -> String {
 
-//}
+fn palindrome(s: &str) -> String {
+ let word = s.chars().collect::<Vec<char>>();
+ if word.iter().eq(word.iter().rev()) {
+    String::from("Yes")
+ } else {
+    String::from("No")
+ }
+}
 
 // fn str_reverse(s: &str) -> String {
    
